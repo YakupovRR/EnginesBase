@@ -24,3 +24,4 @@ C:\Users\rusla\dev\EnginesBase\EnginesBase\obj\Debug\net8.0-windows\ref\EnginesB
 C:\Users\rusla\dev\EnginesBase\EnginesBase\obj\Debug\net8.0-windows\EnginesBase.FormQuantity.resources
 C:\Users\rusla\dev\EnginesBase\EnginesBase\obj\Debug\net8.0-windows\Interop.Microsoft.Office.Interop.Word.dll
 C:\Users\rusla\dev\EnginesBase\EnginesBase\obj\Debug\net8.0-windows\EnginesBase.csproj.ResolveComReference.cache
+C:\Users\rusla\dev\EnginesBase\EnginesBase\obj\Debug\net8.0-windows\EnginesBase.sourcelink.json

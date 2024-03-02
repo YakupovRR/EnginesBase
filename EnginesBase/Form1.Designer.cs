@@ -43,7 +43,7 @@
             // 
             // buttonAddEngine
             // 
-            buttonAddEngine.Location = new Point(614, 224);
+            buttonAddEngine.Location = new Point(452, 173);
             buttonAddEngine.Name = "buttonAddEngine";
             buttonAddEngine.Size = new Size(156, 23);
             buttonAddEngine.TabIndex = 0;
@@ -60,7 +60,7 @@
             // 
             // textBoxName
             // 
-            textBoxName.Location = new Point(614, 121);
+            textBoxName.Location = new Point(452, 70);
             textBoxName.Name = "textBoxName";
             textBoxName.Size = new Size(156, 23);
             textBoxName.TabIndex = 2;
@@ -78,7 +78,7 @@
             // labelName
             // 
             labelName.AutoSize = true;
-            labelName.Location = new Point(614, 103);
+            labelName.Location = new Point(452, 52);
             labelName.Name = "labelName";
             labelName.Size = new Size(96, 15);
             labelName.TabIndex = 4;
@@ -87,7 +87,7 @@
             // labelQuantity
             // 
             labelQuantity.AutoSize = true;
-            labelQuantity.Location = new Point(614, 168);
+            labelQuantity.Location = new Point(452, 117);
             labelQuantity.Name = "labelQuantity";
             labelQuantity.Size = new Size(72, 15);
             labelQuantity.TabIndex = 6;
@@ -95,14 +95,14 @@
             // 
             // textBoxQuantity
             // 
-            textBoxQuantity.Location = new Point(614, 186);
+            textBoxQuantity.Location = new Point(452, 135);
             textBoxQuantity.Name = "textBoxQuantity";
             textBoxQuantity.Size = new Size(156, 23);
             textBoxQuantity.TabIndex = 5;
             // 
             // buttonChangeName
             // 
-            buttonChangeName.Location = new Point(614, 304);
+            buttonChangeName.Location = new Point(452, 253);
             buttonChangeName.Name = "buttonChangeName";
             buttonChangeName.Size = new Size(156, 23);
             buttonChangeName.TabIndex = 7;
@@ -112,7 +112,7 @@
             // 
             // buttonAddComponent
             // 
-            buttonAddComponent.Location = new Point(614, 264);
+            buttonAddComponent.Location = new Point(452, 213);
             buttonAddComponent.Name = "buttonAddComponent";
             buttonAddComponent.Size = new Size(156, 23);
             buttonAddComponent.TabIndex = 8;
@@ -122,7 +122,7 @@
             // 
             // buttonDelete
             // 
-            buttonDelete.Location = new Point(614, 347);
+            buttonDelete.Location = new Point(452, 296);
             buttonDelete.Name = "buttonDelete";
             buttonDelete.Size = new Size(156, 23);
             buttonDelete.TabIndex = 9;
@@ -132,7 +132,7 @@
             // 
             // buttonReport
             // 
-            buttonReport.Location = new Point(614, 390);
+            buttonReport.Location = new Point(452, 339);
             buttonReport.Name = "buttonReport";
             buttonReport.Size = new Size(156, 23);
             buttonReport.TabIndex = 10;
@@ -144,7 +144,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(676, 450);
             Controls.Add(buttonReport);
             Controls.Add(buttonDelete);
             Controls.Add(buttonAddComponent);
