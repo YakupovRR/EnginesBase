@@ -30,25 +30,54 @@ namespace EnginesBase.Services
             }
         }
 
-        public bool ChekElementExist(SqlConnection connection, string elementName)
+        public bool CheckElementExist(string elementName, string connectionString)
         {
             try
             {
-                string query = "SELECT COUNT(*) FROM Elements WHERE Name = @Name";
-
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    command.Parameters.AddWithValue("@Name", elementName);
-                    int count = (int)command.ExecuteScalar();
-                    return count > 0;
+                    connection.Open();
+
+                    string query = "SELECT COUNT(*) FROM Elements WHERE Name = @Name";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Name", elementName);
+                        int count = (int)command.ExecuteScalar();
+                        return count > 0;
+                    }
                 }
             }
             catch
             {
                 throw;
             }
-
         }
+
+        public bool CheckEngineExist(string engineName, string connectionString)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    string query = "SELECT COUNT(*) FROM Engines WHERE Name = @Name";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Name", engineName);
+                        int count = (int)command.ExecuteScalar();
+                        return count > 0;
+                    }
+                }
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
 
         public bool ChekElementUnused(int elementId, string connectionString)
         {
@@ -68,7 +97,6 @@ namespace EnginesBase.Services
                 throw;
             }
         }
-
 
         private bool CheckElementUsedInElementLinks(SqlConnection connection, int elementId)
         {

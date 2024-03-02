@@ -47,7 +47,7 @@ namespace EnginesBase.Services
                     connection.Open();
 
                     bool parentIsEngine = checkService.CheckIfEngine(connection, parentName);
-                    bool elementAlreadyExist = checkService.ChekElementExist(connection, newElementName);
+                    bool elementAlreadyExist = checkService.CheckElementExist(newElementName, connectionString);
 
                     int newElementId;
 

@@ -82,6 +82,12 @@ namespace EnginesBase
                     return;
                 }
 
+                if (dbFacade.checkNewNameExist(newName))
+                {
+                    MessageBox.Show("Имя уже используется. Введите другое");
+                    return;
+                }
+
                 try
                 {
                     dbFacade.ChangeName(selectedNodeText, newName);
@@ -90,6 +96,7 @@ namespace EnginesBase
                 {
                     MessageBox.Show(ex.Message);
                 }
+
             }
             UpdateTreeViewData();
         }

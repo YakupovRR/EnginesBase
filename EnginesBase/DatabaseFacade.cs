@@ -14,6 +14,7 @@ namespace EnginesBase
         private InsertService insertService = new InsertService();
         private DeleteService deleteService = new DeleteService();
         private GenerateReportService generateReportService = new GenerateReportService();
+        private CheckService checkService = new CheckService();
 
         private static string serverName = "DESKTOP-LMC9S02\\SQLEXPRESS";
         private static string databaseName = "EnginesDb";
@@ -53,6 +54,12 @@ namespace EnginesBase
 
         public Dictionary<string, int> generateReportTable(string name)
         { return generateReportService.generateReportTable(name, connectionString); }
+
+        public bool checkNewNameExist (string name) 
+        {
+            return  checkService.CheckElementExist(name, connectionString) ||
+                checkService.CheckEngineExist(name, connectionString);
+        }
 
 
     }
